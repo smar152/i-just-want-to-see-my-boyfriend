@@ -1,5 +1,5 @@
 import Head from "next/head";
-import comics, { getLastComicPageNumbers } from "../data/comics";
+import comics from "../data/comics";
 import { useRouter } from "next/navigation";
 import { useEffect } from "react";
 import { getMetaTags } from "../util";
@@ -15,7 +15,7 @@ export default function Home({ data, redirectUrl }) {
       <title></title>
       <link rel="icon" href="/favicon.ico" />
       {getMetaTags({
-        title: "Home Queer Home",
+        title: "I Just Want To See My Boyfriend",
         description: "A webcomic by Smar",
         imageUrl,
       })}
@@ -24,17 +24,13 @@ export default function Home({ data, redirectUrl }) {
 }
 
 export function getStaticProps() {
-  const { lastComicSeasonNumber, lastComicEpisodeNumber, lastComicPageNumber } =
-    getLastComicPageNumbers();
-  const redirectUrl = `/season/${lastComicSeasonNumber + 1}/episode/${
-    lastComicEpisodeNumber + 1
-  }/page/${lastComicPageNumber + 1}`;
+  const lastComicPageNumber = comics.length;
+  const redirectUrl = `/page/${lastComicPageNumber}`;
 
   return {
     props: {
       redirectUrl,
-      data: comics?.[lastComicSeasonNumber]?.episodes?.[lastComicEpisodeNumber]
-        ?.pages?.[lastComicPageNumber],
+      data: comics?.[lastComicPageNumber - 1],
     },
   };
 }

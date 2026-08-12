@@ -12,7 +12,7 @@ const SiteHeader = styled("div")`
 `;
 
 const MainNavigation = styled("nav")`
-  background: orange;
+  background: #321f71;
   color: white;
   padding: 12px;
   font-family: "DM Sans", "FuturaStdBold", Helvetica, Arial;

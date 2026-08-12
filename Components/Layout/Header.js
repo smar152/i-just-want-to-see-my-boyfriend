@@ -1,13 +1,13 @@
 import Link from "next/link";
 import styled from "styled-components";
 import { device } from "../../data/device";
-import { getLastComicPageNumbers } from "../../data/comics";
+import comics from "../../data/comics";
 
 const SiteHeader = styled("div")`
   display: flex;
   flex-direction: column;
   width: 100%;
-  background-color: orange;
+  background-color: #321f71;
   /* z-index: 2; */
   justify-content: space-between;
   margin: auto;
@@ -32,7 +32,7 @@ const LogoArea = styled("div")`
 `;
 
 const MainNavigation = styled("nav")`
-  background: orange;
+  background: #321f71;
   color: white;
   padding: 12px;
   @media (max-width: 768px) {
@@ -71,24 +71,21 @@ const StImg = styled("img")`
   }
 `;
 export default function Header() {
-  const lastComicPage = getLastComicPageNumbers();
-  const url = `/season/${lastComicPage.lastComicSeasonNumber + 1}/episode/${
-    lastComicPage.lastComicEpisodeNumber + 1
-  }/page/${lastComicPage.lastComicPageNumber + 1}`;
+  const lastComicPageNumber = comics.length;
+  const url = `/page/${lastComicPageNumber + 1}`;
   return (
     <>
       <SiteHeader data-id="header-container">
         <LogoArea data-id="logo-container">
           <Link as="/" href="/">
             <StImg
-              src="/img/logo/HQHlogo-01.svg"
-              alt="Home Queer Home - logo"
+              src="/img/logo/SMB_logo.svg"
+              alt="I Just Want To See My Boyfriend - logo"
             />
           </Link>
         </LogoArea>
         <MainNavigation data-id="main-navigation">
           <MenuItem href={url}>comic</MenuItem>
-          <MenuItem href="/archive">archive</MenuItem>
           <MenuItem href="/about">about</MenuItem>
           <MenuItem href="https://smar.gumroad.com/" target="_blank">
             store

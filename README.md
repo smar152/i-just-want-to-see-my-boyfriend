@@ -1,4 +1,4 @@
-# Home Queer Home
+# I Just Want To See My Boyfriend
 
 ## The Comic
 
@@ -10,6 +10,6 @@ They are trying their best to survive their own heads and human relationships. �
 
 ## The Code
 
-🌱 Custom webcomic site for the Home Queer Home project.
+🌱 Custom webcomic site for the I Just Want To See My Boyfriend project.
 
 👩‍💻 Made with 💖 using React with Next.js

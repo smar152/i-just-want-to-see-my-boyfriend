@@ -5,10 +5,7 @@ import ChevronDoubleLeft from "./Icons/ChevronDoubleLeft";
 import ChevronDoubleRight from "./Icons/ChevronDoubleRight";
 import ChevronRight from "./Icons/ChevronRight";
 import ChevronLeft from "./Icons/ChevronLeft";
-import {
-  getLastComicPageNumbers,
-  getTotalEpisodePagesNumber,
-} from "../data/comics";
+import comics from "../data/comics";
 import DisqusComments from "./DisqusComments";
 import { getMetaTags } from "../util";
 
@@ -35,7 +32,7 @@ const StPagePagination = styled("div")`
 
   a {
     text-decoration: none;
-    color: orange;
+    color: #321f71;
   }
   @media (max-width: 768px) {
     transform: translateY(-50%);
@@ -50,14 +47,14 @@ const StSeason = styled.div`
   display: flex;
   font-weight: 400;
   padding: 10px 15px 5px 15px;
-  outline: solid 2px orange;
+  outline: solid 2px #321f71;
   outline-offset: -1px;
   position: relative;
   top: -2px;
   border-radius: 0px 0px 20px 20px;
   transition: background-color 400ms ease 0s;
   background-color: rgba(255, 255, 255, 0.97);
-  color: orange;
+  color: #321f71;
 
   :hover {
     background-color: rgba(255, 165, 0, 0.97);
@@ -80,13 +77,13 @@ const StPaginationIcon = styled(StSeason)`
     padding: 7px;
     margin: 0px 15px;
     background-color: white;
-    color: orange;
+    color: #321f71;
   }
 `;
 
 const StPage = styled(StSeason)`
   border-radius: 0px 0px 20px 20px;
-  background-color: orange;
+  background-color: #321f71;
   color: white;
 `;
 
@@ -95,7 +92,7 @@ const StPaginationIconMobile = styled(StPaginationIcon)`
     height: 2.6rem;
   }
   transform: translateY(-20%);
-  border: solid 2px orange;
+  border: solid 2px #321f71;
 `;
 
 const StPageImages = styled("div")`
@@ -136,14 +133,19 @@ const StShaddow = styled("div")`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: rgb(2,0,36);
-    background: linear-gradient(180deg, rgba(2,0,36,0) 0%, rgba(255,255,255,1) 100%);
+    background: rgb(2, 0, 36);
+    background: linear-gradient(
+      180deg,
+      rgba(2, 0, 36, 0) 0%,
+      rgba(255, 255, 255, 1) 100%
+    );
     height: 130px;
     z-index: 242343;
     position: fixed;
     bottom: 60px;
     width: 100%;
     padding-bottom: 25px;
+  }
 `;
 
 const StMobilePageNavigation = styled("div")`
@@ -152,7 +154,7 @@ const StMobilePageNavigation = styled("div")`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: orange;
+    background-color: #321f71;
     height: 60px;
     z-index: 242343;
     position: fixed;
@@ -167,11 +169,9 @@ const StMobilePageNumber = styled("span")`
 `;
 
 const ComicPage = (props) => {
-  const lastComicPage = getLastComicPageNumbers();
+  const lastComicPageNumber = comics.length;
 
-  const url = `/season/${lastComicPage.lastComicSeasonNumber + 1}/episode/${
-    lastComicPage.lastComicEpisodeNumber + 1
-  }/page/${lastComicPage.lastComicPageNumber + 1}`;
+  const url = `/page/${lastComicPageNumber}`;
   const { page, error } = props;
   const {
     title,
@@ -180,48 +180,33 @@ const ComicPage = (props) => {
     hoverTitle,
     blogPost,
     pageNumber,
-    episodeNumber,
-    seasonNumber,
     previous,
     next,
   } = page || {};
   const dateObj = new Date(`${date} 12:00:00`);
-  const totalEpisodePages = getTotalEpisodePagesNumber(
-    seasonNumber,
-    episodeNumber
-  );
-  const havePage =
-    Number.isInteger(seasonNumber) &&
-    Number.isInteger(episodeNumber) &&
-    Number.isInteger(pageNumber);
+  const havePage = Number.isInteger(pageNumber);
   const noValueText = "s̸͙͓̐e̷̥̾ͅc̴̠̊̈ȓ̶͇̥ę̵͝ṭ̵̳̃͂";
-  const seasonNumberText = havePage ? seasonNumber + 1 : noValueText;
-  const episodeNumberText = havePage ? episodeNumber + 1 : noValueText;
   const pageNumberText = havePage ? pageNumber + 1 : noValueText;
 
   return (
     <StComicPage data-id="comic-page">
       <Head>
-        <title>{`Home Queer Home: `}</title>
+        <title>{`I Just Want To See My Boyfriend: `}</title>
         {getMetaTags({
-          title: `Home Queer Home s${seasonNumber + 1}e${episodeNumber + 1}p ${
-            pageNumber + 1
-          }`,
+          title: `I Just Want To See My Boyfriend p ${pageNumber + 1}`,
           description: "A webcomic by Smar",
           imageUrl: images?.[0]?.url,
         })}
       </Head>
       <StPagePagination data-id="page-pagination">
         <StPageNavigationArrows>
-          <StLink href={`/season/1/episode/1/page/1`}>
+          <StLink href={`/page/1`}>
             <StPaginationIcon data-id="pagination-icon">
               <ChevronDoubleLeft />
             </StPaginationIcon>
           </StLink>
           <StHideOnMobile>
-            <StLink
-              href={`/season/${previous?.seasonNumber}/episode/${previous?.episodeNumber}/page/${previous?.pageNumber}`}
-            >
+            <StLink href={`/page/${previous?.pageNumber}`}>
               <StPaginationIcon>
                 <ChevronLeft />
               </StPaginationIcon>
@@ -229,25 +214,13 @@ const ComicPage = (props) => {
           </StHideOnMobile>
         </StPageNavigationArrows>
         <StPageNavigationArrows>
-          <StLink href={`/season/${seasonNumber + 1}/episode/${1}/page/${1}`}>
-            <StSeason>season {seasonNumberText}</StSeason>
-          </StLink>
-          <StLink
-            href={`/season/${seasonNumber + 1}/episode/${
-              episodeNumber + 1
-            }/page/${1}`}
-          >
-            <StSeason>episode {episodeNumberText}</StSeason>
-          </StLink>
           <StHideOnMobile>
             <StPage>page {pageNumberText}</StPage>
           </StHideOnMobile>
         </StPageNavigationArrows>
         <StPageNavigationArrows>
           <StHideOnMobile>
-            <StLink
-              href={`/season/${next?.seasonNumber}/episode/${next?.episodeNumber}/page/${next?.pageNumber}`}
-            >
+            <StLink href={`/page/${next?.pageNumber}`}>
               <StPaginationIcon>
                 <ChevronRight />
               </StPaginationIcon>
@@ -260,10 +233,7 @@ const ComicPage = (props) => {
           </StLink>
         </StPageNavigationArrows>
       </StPagePagination>
-      <StLink
-        data-id="page-image-link"
-        href={`/season/${next?.seasonNumber}/episode/${next?.episodeNumber}/page/${next?.pageNumber}`}
-      >
+      <StLink data-id="page-image-link" href={`/page/${next?.pageNumber}`}>
         <StPageImages title={hoverTitle} data-id="page-images">
           {images?.map?.((image) => {
             const { url, alt } = image;
@@ -292,19 +262,15 @@ const ComicPage = (props) => {
       </StPostContainer>
       <StShaddow></StShaddow>
       <StMobilePageNavigation>
-        <StLink
-          href={`/season/${previous?.seasonNumber}/episode/${previous?.episodeNumber}/page/${previous?.pageNumber}`}
-        >
+        <StLink href={`/page/${previous?.pageNumber}`}>
           <StPaginationIconMobile>
             <ChevronLeft />
           </StPaginationIconMobile>
         </StLink>
         <StMobilePageNumber>
-          episode page {pageNumber + 1}/{totalEpisodePages}
+          page {pageNumber + 1}/{comics.length}
         </StMobilePageNumber>
-        <StLink
-          href={`/season/${next?.seasonNumber}/episode/${next?.episodeNumber}/page/${next?.pageNumber}`}
-        >
+        <StLink href={`/page/${next?.pageNumber}`}>
           <StPaginationIconMobile>
             <ChevronRight />
           </StPaginationIconMobile>

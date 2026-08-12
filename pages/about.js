@@ -11,22 +11,20 @@ const AboutPage = () => {
   return (
     <Layout>
       <Head>
-        <title>Home Queer Home: About</title>
+        <title>I Just Want To See My Boyfriend: About</title>
       </Head>
       <InnerLayout
         title="About"
         three={
           <div>
-            <h2>Home Queer Home</h2>
+            <h2>I Just Want To See My Boyfriend</h2>
             <p>
-              Sophia, Danae & Jo are three roommates who are trying their best
-              to survive their own heads and human relationships.
+              Aliens have attacked the earth overnight. SO ANNOYING! Iris just
+              wants to catch a flight from Athens to Melbourne to see her
+              boyfriend and doesn't understand why everyone keeps talking about
+              the stupid world events.
             </p>
-            <p>
-              The comic started as a sitcom idea, hence the seasons / episodes
-              structure, but in reality was always a big experiment in anything
-              I wanted to explore at the time that made sense within the format.
-            </p>
+            <p>This comic is what I made of 2026's 23hBD challenge.</p>
             <h2>Smar</h2>
             <p>
               I've always been into making cute, funny things with big feelings.
@@ -49,19 +47,12 @@ const AboutPage = () => {
               It's made in React with Next.js
               <br /> You can see the code in{" "}
               <a
-                href="https://github.com/smar152/home-queer-home"
+                href="https://github.com/smar152/i-just-want-to-see-my-boyfriend"
                 taget="_blank"
               >
                 this GitHub repository
               </a>
               .
-            </p>
-            <p>
-              Huge thanks to{" "}
-              <a href="https://heypano.com/#/" taget="_blank">
-                Pano
-              </a>{" "}
-              for the invaluable help!
             </p>
             <h2>Obviously Outdated Meet The Artist Meme</h2>
             <MeetTheArtist>
