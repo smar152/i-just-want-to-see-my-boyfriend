@@ -99,6 +99,8 @@ const StPageImages = styled("div")`
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 675px;
+  margin: auto;
 `;
 
 const StLink = styled("a")`
@@ -198,6 +200,14 @@ const ComicPage = (props) => {
           imageUrl: images?.[0]?.url,
         })}
       </Head>
+      <StLink data-id="page-image-link" href={`/page/${next?.pageNumber}`}>
+        <StPageImages title={hoverTitle} data-id="page-images">
+          {images?.map?.((image) => {
+            const { url, alt } = image;
+            return <Image key={url} src={url} alt={alt} />;
+          })}
+        </StPageImages>
+      </StLink>
       <StPagePagination data-id="page-pagination">
         <StPageNavigationArrows>
           <StLink href={`/page/1`}>
@@ -233,14 +243,6 @@ const ComicPage = (props) => {
           </StLink>
         </StPageNavigationArrows>
       </StPagePagination>
-      <StLink data-id="page-image-link" href={`/page/${next?.pageNumber}`}>
-        <StPageImages title={hoverTitle} data-id="page-images">
-          {images?.map?.((image) => {
-            const { url, alt } = image;
-            return <Image key={url} src={url} alt={alt} />;
-          })}
-        </StPageImages>
-      </StLink>
       <StPostContainer data-id="post-container">
         {error && (
           <StPostContent>

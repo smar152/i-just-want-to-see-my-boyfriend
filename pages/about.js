@@ -18,13 +18,21 @@ const AboutPage = () => {
         three={
           <div>
             <h2>I Just Want To See My Boyfriend</h2>
+            <p>👽 Aliens have attacked the earth overnight. SO ANNOYING!</p>
             <p>
-              Aliens have attacked the earth overnight. SO ANNOYING! Iris just
-              wants to catch a flight from Athens to Melbourne to see her
-              boyfriend and doesn't understand why everyone keeps talking about
-              the stupid world events.
+              🧡 Iris just wants to catch a flight from Athens to Melbourne to
+              see her boyfriend and doesn't understand why everyone keeps
+              talking about the stupid world events.
             </p>
-            <p>This comic is what I made of 2026's 23hBD challenge.</p>
+            <p>
+              🐰 This comic was originally written for the{" "}
+              <a href="https://23hbd.com/">
+                23 heures de la BD (23-Hour Comics Day)
+              </a>{" "}
+              challenge in 2026. The first draft, created during these 23 hours
+              can be read{" "}
+              <a href="https://23hbd.com/participants/2026/smar/">here</a>.
+            </p>
             <h2>Smar</h2>
             <p>
               I've always been into making cute, funny things with big feelings.
@@ -34,17 +42,24 @@ const AboutPage = () => {
               job, turned to web development, and now am back to making comics
               because I want to. ❤️
             </p>
-            <p>Born in 1991, I live in Athens, Greece with the silliest cat.</p>
-            <p>Not accepting commissions or freelance work at the moment.</p>
+            <p>Born in 1991, I live in Athens, Greece with the best cats.</p>
             <h2>This website</h2>
             <p>
-              I'm still a believer in indie projects having their own
-              decentralized space online. A while ago I decided to move away
-              from Wordpress and make my own website for the comic, so I can
-              play with it as much as I want to. ✨
+              As a comic creator I grew up on the internet during the webcomics
+              era. I was super inspired by seeing artists making their own indie
+              projects as they wanted while sharing their progress with the
+              world in their own corners of the internet. 🥹 I'm still a
+              believer in indie projects having their own decentralized space
+              online, away from the noise of social media.
             </p>
             <p>
-              It's made in React with Next.js
+              This is my third webcomic. It's not a big project but I've really
+              missed sharing comics this way, so I thought I'd do it anyway and
+              see how it goes! My hope is for more free online comics that have
+              a community around them in the future. 🙏
+            </p>
+            <p>
+              This one is made in React with Next.js
               <br /> You can see the code in{" "}
               <a
                 href="https://github.com/smar152/i-just-want-to-see-my-boyfriend"
@@ -62,6 +77,16 @@ const AboutPage = () => {
                 width="100%"
               />
             </MeetTheArtist>
+            <p>
+              Updates:
+              <ul>
+                <li>Apocalypse gear has been retired</li>
+                <li>The wallet has been stolen</li>
+                <li>I have cat benefits at home</li>
+                <li>I no longer use a smartphone</li>
+                <li>The outfit remains unchanged</li>
+              </ul>
+            </p>
           </div>
         }
       />

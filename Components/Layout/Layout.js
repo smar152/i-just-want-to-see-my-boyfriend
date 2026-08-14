@@ -21,7 +21,7 @@ const MainContent = styled("div")`
   margin: 0px 20px;
 
   @media ${device.tablet} {
-    width: ${deviceSize.tablet};
+    width: 700px;
     margin: 0px auto;
   }
 `;

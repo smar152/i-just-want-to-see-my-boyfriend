@@ -72,7 +72,7 @@ const StImg = styled("img")`
 `;
 export default function Header() {
   const lastComicPageNumber = comics.length;
-  const url = `/page/${lastComicPageNumber + 1}`;
+  const url = `/page/${lastComicPageNumber}`;
   return (
     <>
       <SiteHeader data-id="header-container">
