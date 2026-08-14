@@ -76,7 +76,8 @@ export const getServerSideProps = async ({ params, res }) => {
     };
 
     const next = {
-      pageNumber: currentPageNumber,
+      pageNumber:
+        currentPageNumber + 1 >= comics.length ? null : currentPageNumber + 1,
     };
 
     if (currentPageNumber > 0) {

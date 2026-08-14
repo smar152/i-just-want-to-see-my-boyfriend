@@ -189,6 +189,8 @@ const ComicPage = (props) => {
   const havePage = Number.isInteger(pageNumber);
   const noValueText = "s̸͙͓̐e̷̥̾ͅc̴̠̊̈ȓ̶͇̥ę̵͝ṭ̵̳̃͂";
   const pageNumberText = havePage ? pageNumber + 1 : noValueText;
+  // TODO: Hide next arrows on last page
+  const isLastPage = next.pageNumber && next.pageNumber !== comics.length;
 
   return (
     <StComicPage data-id="comic-page">
