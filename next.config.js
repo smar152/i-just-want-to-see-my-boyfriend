@@ -3,10 +3,12 @@
  */
 const nextConfig = {
   compiler: {
-    styledComponents: true
+    styledComponents: true,
   },
+  basePath: "/smb-comic",
   images: {
-    domains: ["placekitten.com", "http://localhost"],
+    unoptimized: true,
+    domains: ["placekitten.com", "localhost"],
   },
 };
 
