@@ -5,7 +5,7 @@ const comics = [
     date: "2018-09-05",
     images: [
       {
-        url: "/img/pages/01.png",
+        url: "/img/pages/page01-ijwtsmb-smar.png",
         alt: "Maybe when I get another art level up, I will start remembering that people carry backpacks/handbags too, when they're on the outside world.",
         width: 900,
       },
@@ -29,7 +29,7 @@ const comics = [
     date: "2019-03-14",
     images: [
       {
-        url: "/img/pages/01.png",
+        url: "/img/pages/page01-ijwtsmb-smar.png",
         alt: "No disappearing chairs on this one! I caught one that almost ran away on panel 4 but it's there now.",
         width: 1200,
       },

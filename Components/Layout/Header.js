@@ -22,6 +22,7 @@ const SiteHeader = styled("div")`
 `;
 
 const LogoArea = styled("div")`
+  width: 100%;
   /* display: flex;
   height: 50px;
   width: 100%;

@@ -4,6 +4,7 @@ import Footer from "./Footer";
 import Header, { headerMinHeight } from "./Header";
 
 const LayoutContainer = styled("div")`
+  width: 100%;
   display: flex;
   flex-direction: column;
   height: 100%;

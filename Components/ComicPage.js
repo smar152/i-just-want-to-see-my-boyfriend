@@ -100,6 +100,7 @@ const StPageImages = styled("div")`
   align-items: center;
   justify-content: center;
   width: 675px;
+  max-width: 100%;
   margin: auto;
 `;
 
@@ -190,7 +191,8 @@ const ComicPage = (props) => {
   const noValueText = "s̸͙͓̐e̷̥̾ͅc̴̠̊̈ȓ̶͇̥ę̵͝ṭ̵̳̃͂";
   const pageNumberText = havePage ? pageNumber + 1 : noValueText;
   // TODO: Hide next arrows on last page
-  const isLastPage = next.pageNumber && next.pageNumber !== comics.length;
+  const isLastPage = next?.pageNumber && next.pageNumber !== comics.length;
+  const nextPageUrl = next?.pageNumber ? `/page/${next.pageNumber}` : url;
 
   return (
     <StComicPage data-id="comic-page">
@@ -202,7 +204,7 @@ const ComicPage = (props) => {
           imageUrl: images?.[0]?.url,
         })}
       </Head>
-      <StLink data-id="page-image-link" href={`/page/${next?.pageNumber}`}>
+      <StLink data-id="page-image-link" href={nextPageUrl}>
         <StPageImages title={hoverTitle} data-id="page-images">
           {images?.map?.((image) => {
             const { url, alt } = image;
