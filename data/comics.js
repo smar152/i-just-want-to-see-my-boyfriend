@@ -1,44 +1,24 @@
 const comics = [
   {
-    title: "Selida 01",
-    alt: "Maybe when I get another art level up, I will start remembering that people carry backpacks/handbags too, when they're on the outside world.",
-    date: "2018-09-05",
+    title: "Hello world!",
+    alt: "Sometimes it just feels like you personally are cursed.",
+    date: "2026-10-14",
     images: [
       {
         url: "/img/pages/page01-ijwtsmb-smar.png",
-        alt: "Maybe when I get another art level up, I will start remembering that people carry backpacks/handbags too, when they're on the outside world.",
+        alt: "Sometimes it just feels like you personally are cursed.",
         width: 900,
       },
     ],
-    hoverTitle: "I hate it when this happens",
+    hoverTitle: "Sometimes it just feels like you personally are cursed.",
     blogPost: `
     <div>
-    <p>Yay, Season 2 starts today!<br>
-    (You can totally start from here even if you haven’t read a single page so far.)</p>
-    <p>It feels like a new start. As you can see we have a different page format in this season, hopefully the art and writing are better, and there are no episode divisions.</p>
-    <p>I’m glad I took a break from weekly deadlines. It did give me some perspective and time to work on this season in advance (no, I have no idea how to take actual breaks). I’ve outlined 40 strips and I’m so excited to start sharing them with you! </p>
-    <p>Remember to follow me on mostly instagram but other places too, where I share updates, sketches, other art and stuff related or not to this specific comic.</p>
-    <p>Thanks for reading! ❤</p>
-    <p><a href="https://www.instagram.com/smarmakescomics/" rel="noopener" target="_blank">Instagram</a> | <a href="https://twitter.com/SmarMakesComics" rel="noopener" target="_blank">Twitter</a> | <a href="https://www.facebook.com/smarMakesComics/" rel="noopener" target="_blank">Facebook</a> | <a href="http://smarmakescomics.tumblr.com/" rel="noopener" target="_blank">Tumblr</a> | <a href="https://www.etsy.com/shop/SmarMakesComics" rel="noopener" target="_blank">Etsy Shop</a> | <a href="https://gumroad.com/smar" rel="noopener" target="_blank">Gumroad</a> | <a href="https://www.patreon.com/smar" rel="noopener" target="_blank">Patreon</a></p>
-    <p>PS: I lowered the Gumroad prices – you can get now every comic I’ve self published for €0.99 each!</p></div>
-      `,
-  },
-  {
-    title: "Selida 02",
-    alt: "No disappearing chairs on this one! I caught one that almost ran away on panel 4 but it's there now.",
-    date: "2019-03-14",
-    images: [
-      {
-        url: "/img/pages/page01-ijwtsmb-smar.png",
-        alt: "No disappearing chairs on this one! I caught one that almost ran away on panel 4 but it's there now.",
-        width: 1200,
-      },
-    ],
-    hoverTitle: "Super placeholdery text",
-    blogPost: `
-    <div><p>I’ve been inking a lot of black and white comics lately and working with color feels refreshing! I’m also experimenting with more free shading, hence the last panel.</p>
-    <p><a href="https://www.instagram.com/smarmakescomics/" target="_blank" rel="noopener">Instagram</a> | <a href="https://twitter.com/SmarMakesComics" target="_blank" rel="noopener">Twitter</a> | <a href="https://www.facebook.com/smarMakesComics/" target="_blank" rel="noopener">Facebook</a> |&nbsp;<a href="https://www.etsy.com/shop/SmarMakesComics" target="_blank" rel="noopener">Etsy Shop</a> | <a href="https://gumroad.com/smar" target="_blank" rel="noopener">Gumroad</a> | <a href="https://www.patreon.com/smar" target="_blank" rel="noopener"><strong>Patreon</strong></a></p>
-    </div>
+    <p>I'm back!!! Making a new webcomic feels like coming back to my true form, somehow.</p>
+    <p>This comic is very different from my usual shit. I wrote it and made a ridiculous first draft in 23 hours for a challenge and my goal was to get unstuck by witing something I'd never normally write, which ended up silliness for the fun of it without much deeper meaning.</p>
+    <p>I'm also using this comic as practice to get back to making comics in color. Printing stuff and taking it to comic cons is a wonderful world, but color costs! I deeply believe in comics being as accessible as possible so I've defaulted to the cheapest option possible for print, which is black & white. Now I'm writing a much longer comic that I want to make in color, so this shortie is my warm up for the longer one. It feels good to be back in color! I've missed it.</p>
+    <p>This comic is around 23 pages long, so it's not going to be active for very long. Still, I've missed the internet being a place to blog and have your own space, I've missed webcomics both as a reader and as a creator, and I just wanted to play with it!</p>
+    <p>I just counted and if I do an update every Wednesday it's going to end in March. Usually October-March is not a very active period for my comics online - the big cons in Greece happen in the spring and we're usually heads down, making stuff until then. So I feel excited about using this time to exist online for a change! I'm looking forward to sharing the process as well as random thoughts and see what happens until then! It's going to be a fun trip.</p>
+    <p>Thanks for reading this far, I'll be happy to read any comments! 💖</p>
       `,
   },
 ];
