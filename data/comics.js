@@ -44,6 +44,26 @@ const comics = [
     </div>
       `,
   },
+  {
+    title: "Secret plan revealed in this post",
+    alt: "What a journey this page is.",
+    date: "2026-10-28",
+    images: [
+      {
+        url: "/img/pages/page03-ijwtsmb-smar.png",
+        alt: "What a journey this page is.",
+        width: 900,
+      },
+    ],
+    hoverTitle: "What a journey this page is.",
+    blogPost: `
+    <div>
+      <p>This is my favorite page so far! I was starting to feel comfortable playing with the art, tried different things, and even used Deedee from Dexter's lab as reference for the last pose! 🤩</p>
+      <p>I started writing this comic thinking of making the protagonist a villain, which is something I haven't done before. It's so freeing! There are no moral lessons in this comic. Just fun because why not.</p>
+      <p>Less fun news: I'm sick. I don't like it. 😾 And I have to, no big deal, finish this comic before the next update. 😰 The secret plan all along was that I'm printing this comic and taking it to <a href="https://www.thoughtbubblefestival.com/" target="_blank">Thought Bubble<a> in November! Which is soon! Yay! 🤩😨</p>
+    </div>
+      `,
+  },
 ];
 
 export default comics;
