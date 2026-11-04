@@ -64,6 +64,26 @@ const comics = [
     </div>
       `,
   },
+  {
+    title: "Secret plan revealed in this post",
+    alt: "I obviously enjoyed having to come up with insta names",
+    date: "2026-11-04",
+    images: [
+      {
+        url: "/img/pages/page04-ijwtsmb-smar.png",
+        alt: "I obviously enjoyed having to come up with insta names",
+        width: 900,
+      },
+    ],
+    hoverTitle: "I obviously enjoyed having to come up with insta names",
+    blogPost: `
+    <div>
+      <p>AAAAA - I've JUST sent the files for print 😳</p>
+      <p>This week+ has been a blur of me being sick and on a deadline, so I don't feel very human. I'm just looking forward to hold the physical copy in my hands! I can't believe I will be in Thought bubble next weekend!</p>
+      <p>Fun facts: the phone has been changed to purple for continuity. But I didn't upload the corrected page here because I think it's kind of fun to have a more updated print version. There's also some spelling issues I left here</p>
+    </div>
+      `,
+  },
 ];
 
 export default comics;
