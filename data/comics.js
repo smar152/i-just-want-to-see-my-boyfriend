@@ -84,6 +84,25 @@ const comics = [
     </div>
       `,
   },
+  {
+    title: "Action!",
+    alt: "I definitely need the help of magic to pack",
+    date: "2026-11-11",
+    images: [
+      {
+        url: "/img/pages/page05-ijwtsmb-smar.png",
+        alt: "I definitely need the help of magic to pack",
+        width: 900,
+      },
+    ],
+    hoverTitle: "I definitely need the help of magic to pack",
+    blogPost: `
+    <div>
+      <p>This page was one of the most difficult ones for me to wrap my head around. I never draw action scenes but wanted to show the mess / magic of packing a suitcase. Thanks, friend who suggested the Fantasia wizard scene as reference</p>
+      <p>I'm currently in the middle of packing my own stuff to go to Thought Bubble this weekend - I'm also getting this comic from the printer today, I'm beyond excited to hold it in my hands! 🤩 I've seen a sample and it's freaking beautiful. Has anyone talked to you about our lord and savior, book paper?</p>
+    </div>
+      `,
+  },
 ];
 
 export default comics;
