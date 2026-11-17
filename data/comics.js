@@ -103,6 +103,27 @@ const comics = [
     </div>
       `,
   },
+  {
+    title: "Action!",
+    alt: "👉👈",
+    date: "2026-11-18",
+    images: [
+      {
+        url: "/img/pages/page06-ijwtsmb-smar.png",
+        alt: "👉👈",
+        width: 900,
+      },
+    ],
+    hoverTitle: "👉👈",
+    blogPost: `
+    <div>
+      <p>Hello from the land of tasteless fruit! I came here in England for Thought Bubble and have a few more days of holidays / recovering from the festival. I'm so full of thoughts about working on something you love, community, and inspiration to make more comics!</p>
+      <p>I think my biggest takeaway from the con is how many people work on this field because we love it. There's no other reason to make comics. It's not just a Greek worry that there's no money in it, it's a reality even in places with more opportunities. We share the same worries about our work and the need for community around us. It's a bit depressing, and something we're constantly processing, but at the same time I find hope in the fact that we still insist on doing this thing and finding ways to continue doing it.</p>
+      <p>I've had very interesting conversations with people who make similar things as me / us, and I'm feeling very inspired to keep making more comics!</p>
+      <p>As I've said, I've finished this comic and got it printed in actual paper in time to get it here. I can't believe it's done! The past few months have been constantly running against the clock. But isn't it always like that? I need to I take some time to process and take a break, and then... anyway, I'll let you know about my next steps as they happen.</p>
+    </div>
+      `,
+  },
 ];
 
 export default comics;
