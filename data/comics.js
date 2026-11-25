@@ -128,7 +128,7 @@ const comics = [
   {
     title: "Athens is back",
     alt: "Παγκρατάρα",
-    date: "2026-11-18",
+    date: "2026-11-25",
     images: [
       {
         url: "/img/pages/page07-ijwtsmb-smar.png",
