@@ -125,6 +125,27 @@ const comics = [
     </div>
       `,
   },
+  {
+    title: "Athens is back",
+    alt: "Παγκρατάρα",
+    date: "2026-11-18",
+    images: [
+      {
+        url: "/img/pages/page07-ijwtsmb-smar.png",
+        alt: "Παγκρατάρα",
+        width: 900,
+      },
+    ],
+    hoverTitle: "Παγκρατάρα",
+    blogPost: `
+    <div>
+      <p>This was a fun page! I've been meaning to do more dirty Athens type of stuff for ages. I usually forget how the real world looks like, I have to pressure myself to include cars in order to make things realistic. Graffiti too! You can't do Athens without it.</p>
+      <p>I'm back from Thought Bubble, it feels like Athens is unpaused again. I'm very tired already.</p>
+      <p>I had a chat with a publisher during the festival, where she asked me what I want to do. She threw away a comment about my work being "obviously publishable" so it's a matter of what I want to make now.</p>
+      <p>The humbling reality is, I now have to sit down and do it. My biggest challenge this year will be carving out time to actually work on the bigger comic I keep saying I want to make. I've been trying to make it my main focus and failing for months. I've been distracted by smaller projects that fool me into thinking they won't take up the entirety of my time. I feel like after the excuse of preparing for Thought Bubble has expired, (ok and after the whole holidays thing maybe) I will have to take more drastic measures. Hmm.</p>
+    </div>
+      `,
+  },
 ];
 
 export default comics;
